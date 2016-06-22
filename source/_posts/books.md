@@ -1,12 +1,19 @@
 ---
 title: 书单
-date: 2016-05-17 14:04:47
+date: 2016-06-22 22:00:00
 category : 阅读
 ---
 
 #### 以下是我最近读过的书，并附上购买链接，少量会有读后感  
 
-##### 本书单不定时更新，按照看的先后倒序排列
+##### 本书单不定时更新，按照看的先后倒序排列  
+
+
+[三体全集](https://www.amazon.cn/gp/product/B00S4OK1ZS)  
+> 连续不停的读完了第二部和第三部，非常的精彩。
+
+[魔兽世界•迈向冰封王座:阿尔萨斯](https://www.amazon.cn/gp/product/B01DK24PC8)
+> 耳熟能详的故事了
 
 [动物农场](https://www.amazon.cn/dp/B0099MSHJQ)  
 > 仿佛几十年年前就有人预言了今天发生的情况
@@ -28,11 +35,8 @@ category : 阅读
 
 [彷徨之刃](https://www.amazon.cn/gp/product/B0111G8BDO)
 
-[三体全集](https://www.amazon.cn/gp/product/B00S4OK1ZS)
-> 只看完了第一部
-
 [苹果三剑客:史蒂夫·乔布斯传(修订版)+乔纳森传+沃兹传(套装共3册)](https://www.amazon.cn/gp/product/B00Q3TQMDG)
-> 只看了乔布斯转，不愧是多次改变了世界的人
+> 只看了乔布斯传，不愧是多次改变了世界的人
 
 [重新定义公司:谷歌是如何运营的](https://www.amazon.cn/gp/product/B0156DEYQQ)
 
