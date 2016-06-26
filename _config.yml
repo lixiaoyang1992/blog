@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Lixiaoyang’s blog
-subtitle:
-description: 
+title: 当我谈论代码时我在谈论什么
+subtitle: what do I talk when I talk about code
+description: inspired by 雷蒙德·卡佛，村上春树
 author: Lixiaoyang
 language: zh-Hans
 timezone:
