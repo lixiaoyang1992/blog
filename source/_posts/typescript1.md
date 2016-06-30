@@ -1,7 +1,8 @@
 ---
-title: TypeScript快速上手
+title: TypeScript Hello World
 date: 2016-06-28 08:43:28
 tags: TypeScript
+category : javascript
 ---
 
 [Quick start](https://www.typescriptlang.org/docs/tutorial.html)  
