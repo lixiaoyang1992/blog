@@ -6,7 +6,7 @@ category : javascript
 ---
 
 [官方教程](https://angular.io/docs/ts/latest/quickstart.html)  
-[本文代码地址](https://github.com/lixiaoyang1992/typescript_angular2）
+[本文代码地址](https://github.com/lixiaoyang1992/typescript_angular2)
 
 ### 创建与配置配置项目
 
