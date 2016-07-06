@@ -1,6 +1,6 @@
 ---
 title: 书单
-date: 2016-06-22 22:00:00
+date: 2016-07-06 9:00:00
 category : 阅读
 ---
 
@@ -8,7 +8,11 @@ category : 阅读
 
 ##### 本书单不定时更新，按照看的先后倒序排列  
 
+[JavaScript语言精粹](https://www.amazon.cn/dp/B0097CON2S)
 
+[遇到百分之百的女孩](https://www.amazon.cn/dp/B001DOW6TA)
+
+[你一定爱读的极简欧洲史](https://www.amazon.cn/dp/B00E192518)
 
 [无声告白](https://www.amazon.cn/dp/B00ZWTY2JO)  
 
