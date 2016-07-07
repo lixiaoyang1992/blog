@@ -1,12 +1,16 @@
 ---
 title: 书单
-date: 2016-07-06 9:00:00
+date: 2016-07-07 9:00:00
 category : 阅读
 ---
 
 #### 以下是我最近读过的书，并附上购买链接，少量会有读后感  
 
 ##### 本书单不定时更新，按照看的先后倒序排列  
+
+[当我谈跑步时,我谈些什么](https://www.amazon.cn/dp/B01449CGAO)
+
+[了不起的盖茨比](https://www.amazon.cn/dp/B00EK865WK)
 
 [JavaScript语言精粹](https://www.amazon.cn/dp/B0097CON2S)
 
