@@ -6,7 +6,7 @@ category : javascript
 ---
 
 这是一系列介绍reactjs＋redux+react-router等开发的教程
-
+<!-- more -->
 ## 准备  
 
   读到这篇文章的可能是一个萌萌的妹子，她可能还有点天然呆，所以要讲得更细一点。  

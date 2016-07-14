@@ -8,6 +8,8 @@ category : javascript
 ## npm介绍  
 
 NPM的全称是Node Package Manager，是一个NodeJS包管理和分发工具。
+
+<!-- more -->
 ## npm创建项目  
 在任意目录下执行  
 

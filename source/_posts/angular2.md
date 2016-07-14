@@ -14,7 +14,7 @@ category : javascript
 
     mkdir angular2-quickstart
     cd    angular2-quickstart
-
+<!-- more -->
 #### 创建配置文件
 
 package.json

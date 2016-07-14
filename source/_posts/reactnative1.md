@@ -14,8 +14,8 @@ category : javascript
 ### react-native  
 
 Facebook推出的跨平台的用于构建原生应用的框架。
-
-详细的安装教程在[react-native](https://facebook.github.io/react-native/releases/next/docs/getting-started.html#content)可以找到，光房的教程最近更新了，对应不同的系统都有。
+<!-- more -->
+详细的安装教程在[react-native](https://facebook.github.io/react-native/releases/next/docs/getting-started.html#content)可以找到，官方的教程最近更新了，对应不同的系统都有。
 
 ### init
 

@@ -1,12 +1,15 @@
 ---
 title: 书单
-date: 2016-07-07 9:00:00
+date: 2016-07-14 9:00:00
 category : 阅读
 ---
 
 #### 以下是我最近读过的书，并附上购买链接，少量会有读后感  
 
 ##### 本书单不定时更新，按照看的先后倒序排列  
+
+
+[一个陌生女人的来信](https://www.amazon.cn/dp/B008HK7DIC)
 
 [当我谈跑步时,我谈些什么](https://www.amazon.cn/dp/B01449CGAO)
 
@@ -19,7 +22,7 @@ category : 阅读
 [你一定爱读的极简欧洲史](https://www.amazon.cn/dp/B00E192518)
 
 [无声告白](https://www.amazon.cn/dp/B00ZWTY2JO)  
-
+<!-- more -->
 [三体全集](https://www.amazon.cn/gp/product/B00S4OK1ZS)  
 > 连续不停的读完了第二部和第三部，非常的精彩。
 

@@ -12,7 +12,7 @@ category : javascript
 ## 程序入口
 
 我们在执行 npm start 命令的时候，实际上是执行了 node server.js。这是在package.json中配置的。  
-
+<!-- more -->
     "scripts": {
     "start": "node server.js",
     "test": "cross-env NODE_ENV=test mocha --recursive --compilers js:babel-register",

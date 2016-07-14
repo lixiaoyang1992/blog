@@ -9,7 +9,7 @@ category : javascript
 [本文代码地址](https://github.com/lixiaoyang1992/React-Webpack-typescript)
 
 总体来说就是加了一些配置，具体的使用代码还是一样的。
-
+<!-- more -->
 ### 项目结构  
 
     mkdir proj

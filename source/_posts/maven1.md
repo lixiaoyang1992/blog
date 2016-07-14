@@ -11,7 +11,7 @@ dedicated to you.
 
 Maven 官网的下载链接是：[Maven下载](http://maven.apache.org/download.cgi)  
 下载，解压到你喜欢的目录
-
+<!-- more -->
 ## 配置环境变量  
 
 Maven 官网的配置指导是：[Maven配置](http://maven.apache.org/install.html)

@@ -6,7 +6,7 @@ category : Android
 ---
 
 入手SamsungGalaxyS7edge两个月了，实际上手android6.0也2个月了，对于新的权限系统有了切实的体验，也领略了微博等国产应用的无耻。今天参照 [官方的指南](https://developer.android.com/training/permissions/index.html) 也写一遍如何在android6.0中获取权限。
-
+<!-- more -->
 ## 声明权限  
 
 第一步和之前一样，在 Manifest 里面把我们需要的权限声明。  

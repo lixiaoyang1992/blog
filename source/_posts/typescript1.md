@@ -6,7 +6,7 @@ category : javascript
 ---
 
 [Quick start](https://www.typescriptlang.org/docs/tutorial.html)  
-
+<!-- more -->
 #### 全局安装typescript  
 
     npm install -g typescript

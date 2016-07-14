@@ -13,7 +13,7 @@ category : javascript
 Sortable — is a minimalist JavaScript library for reorderable drag-and-drop lists on modern browsers and touch devices. No jQuery. Supports Meteor, AngularJS, React, Polymer and any CSS library, e.g. Bootstrap.
 
 非常轻量级的拖放排序库，适用于现代浏览器和触摸设备。不需要jQuery，支持很多前端库。
-
+<!-- more -->
 ## 使用  
 
 最基本的使用很简单。  
