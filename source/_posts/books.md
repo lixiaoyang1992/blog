@@ -8,6 +8,7 @@ category : 阅读
 
 ##### 本书单不定时更新，按照看的先后倒序排列  
 
+[挪威的森林](https://www.amazon.cn/dp/B00JLACTKY)
 
 [一个陌生女人的来信](https://www.amazon.cn/dp/B008HK7DIC)
 
