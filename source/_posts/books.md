@@ -1,12 +1,16 @@
 ---
 title: 书单
-date: 2016-07-14 9:00:00
+date: 2016-07-24 9:00:00
 category : 阅读
 ---
 
 #### 以下是我最近读过的书，并附上购买链接，少量会有读后感  
 
 ##### 本书单不定时更新，按照看的先后倒序排列  
+
+[神们自己](https://www.amazon.cn/dp/B00RRCUBN0)
+
+[从0到1:开启商业与未来的秘密](https://www.amazon.cn/0-1/dp/B00U5OJFX4)
 
 [且听风吟](https://www.amazon.cn/dp/B00JLADJSA)
 
@@ -17,7 +21,7 @@ category : 阅读
 [当我谈跑步时,我谈些什么](https://www.amazon.cn/dp/B01449CGAO)
 
 [了不起的盖茨比](https://www.amazon.cn/dp/B00EK865WK)
-
+<!-- more -->
 [JavaScript语言精粹](https://www.amazon.cn/dp/B0097CON2S)
 
 [遇到百分之百的女孩](https://www.amazon.cn/dp/B001DOW6TA)
@@ -25,7 +29,7 @@ category : 阅读
 [你一定爱读的极简欧洲史](https://www.amazon.cn/dp/B00E192518)
 
 [无声告白](https://www.amazon.cn/dp/B00ZWTY2JO)  
-<!-- more -->
+
 [三体全集](https://www.amazon.cn/gp/product/B00S4OK1ZS)  
 > 连续不停的读完了第二部和第三部，非常的精彩。
 
