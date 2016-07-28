@@ -11,14 +11,12 @@ category : javascript
 
 {% asset_img ScreenShotWelcome.png %}
 
-
-
 <!-- more -->
 ### 欢迎页  
 
 #### 网络请求
 
-欢迎页面需要获取启动图片，对应的api https://news-at.zhihu.com/api/4/start-image/1080*1776。
+欢迎页面需要获取启动图片，对应的api https://news-at.zhihu.com/api/4/start-image/1080*1776
 
 建立js/api/zhihu.js
 
