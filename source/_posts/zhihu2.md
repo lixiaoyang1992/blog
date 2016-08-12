@@ -1,5 +1,5 @@
 ---
-title: 用react-native开发知乎日报 2
+title: 用react-native开发知乎日报 2.闪屏页面
 date: 2016-07-28 07:10:26
 tags: react-native
 category : javascript

@@ -1,5 +1,5 @@
 ---
-title: 用react-native开发知乎日报 1
+title: 用react-native开发知乎日报 1.搭建项目
 date: 2016-07-24 18:45:48
 tags: react-native
 category : javascript

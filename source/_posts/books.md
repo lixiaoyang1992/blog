@@ -8,6 +8,12 @@ category : 阅读
 
 ##### 本书单不定时更新，按照看的先后倒序排列  
 
+[疾风回旋曲](https://www.amazon.cn/gp/product/B00X9FYAP4)
+
+[战争之潮](https://www.amazon.cn/gp/product/B01DK24Q40)
+
+[偷影子的人](https://www.amazon.cn/gp/product/B00MFHAMMW)
+
 [神们自己](https://www.amazon.cn/dp/B00RRCUBN0)
 
 [从0到1:开启商业与未来的秘密](https://www.amazon.cn/0-1/dp/B00U5OJFX4)
