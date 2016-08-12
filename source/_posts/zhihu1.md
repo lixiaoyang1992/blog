@@ -5,7 +5,7 @@ tags: react-native
 category : javascript
 ---
 
-本项目源码[lixiaoyang1992/zhihu](https://github.com/lixiaoyang1992/zhihu)
+本项目源码:[lixiaoyang1992/zhihu](https://github.com/lixiaoyang1992/zhihu)
 
 项目参考了[f8 app](https://github.com/fbsamples/f8app) 的设计。  
 
