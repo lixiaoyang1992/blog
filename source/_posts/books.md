@@ -8,6 +8,8 @@ category : 阅读
 
 ##### 本书单不定时更新，按照看的先后倒序排列  
 
+[冰与火之歌外传:七王国的骑士](https://www.amazon.cn/gp/product/B00HF317DY)
+
 [疾风回旋曲](https://www.amazon.cn/gp/product/B00X9FYAP4)
 
 [战争之潮](https://www.amazon.cn/gp/product/B01DK24Q40)
