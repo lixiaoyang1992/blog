@@ -6,7 +6,7 @@ category : javascript
 ---
 
 本项目源码 [lixiaoyang1992/zhihu](https://github.com/lixiaoyang1992/zhihu)
-
+<!-- more -->
 列表中的项，点击后可以跳转到对应的详情页。点击事件用到TouchableHighlight。
 
     renderListItem(rowData) {
