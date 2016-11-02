@@ -14,10 +14,33 @@ eslint是一个是一个QA工具，用来避免低级错误和统一代码的风
 
 然后在它给出的选项中选择，为了方便的话，可以直接选择流行的配置：Google、Airbnb、Standard中选择。当然也可以自定义详细完整的配置设置在[官网](http://eslint.org/docs/user-guide/command-line-interface)能够找到。
 
+基本的配置文件 .eslintrc.js
+
+    module.exports = {
+    "extends": "airbnb",
+    "plugins": [
+        "react",
+        "jsx-a11y",
+        "import"
+    ],
+    "rules": {
+        "no-underscore-dangle": 0,
+    }
+    };
+
+rules中可以设置各种规则的程度，0 = off, 1 = warn, 2 = error，具体的规则名要看官方文档。
+
 然后就可以检查代码了。
 
     eslint src
 
 一下子输出了超多的error和warning信息，原来自己平时不注意的代码习惯其实非常的差，分号、空格、tab等等都太不严谨了。
+
+当然也有快速修复的方法
+
+    --fix
+
+基本上可以把一些不严重的错误修复。
+
 
 总之，这是一款非常实用的工具，尤其是语法的检查、多人协作统一代码风格非常有用。这两天做测试学习了很多有用的工具。
