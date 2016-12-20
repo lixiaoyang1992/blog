@@ -198,6 +198,7 @@ function( ){ }是一个匿名函数，前面加!或+是告诉浏览器默认执�
       this.request = getRequest.call(this, success, error)
     }
 
+主要是根据构造的参数来赋值，包含url，还有完成、成功、失败等回调函数。
 
 
 
