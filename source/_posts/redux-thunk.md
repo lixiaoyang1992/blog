@@ -28,7 +28,7 @@ ___
     const INCREMENT_COUNTER = 'INCREMENT_COUNTER';
 
     function increment() {
-      //同步action
+      //正常的action
       return {
         type: INCREMENT_COUNTER
       };
@@ -36,6 +36,7 @@ ___
 
     //thunk action creators
     function incrementAsync() {
+      //特殊
       return dispatch => {
         setTimeout(() => {
           // Yay! Can invoke sync or async actions with `dispatch`
@@ -45,8 +46,10 @@ ___
       };
     }
 
-同步的action正常就会dispatch出去，而异步的action是无法return的，导致网络请求之后无法发出action。
+正常的actionCreator返回的action是对象，正常会dispatch出去。
+而特殊情况下返回的是fuction，无法dispatch的，比如网络请求之后无法发出action。
 而redux-thunk很巧妙的根据返回的类型，如果是function，就把dispatch和getState作为参数传入了回调函数，在回调函数中完成了dispatch。
+这样就可以在actionCreator里return一个回调函数。
 
     function createThunkMiddleware(extraArgument) {
       return ({ dispatch, getState }) => next => action => {

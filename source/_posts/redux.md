@@ -17,15 +17,17 @@ redux的api一共只用5个，可以说是相当的简洁。
 
 创建一个redux store来维护state，唯一的修改数据的方法就是dispatch()。
 store在应用中应该只有一份，这是reudx和flux的区别，使得整个架构更加的精简。
+为了反映state是如何根据action变化的，应当把多个reducer用combineReducers合并成一个。
 
 reducer：根据现有的state和action，来生成一个新的state。
-如果你有多个reducer，应该使用combineReducers合并成一个。
 
 preloadedState：初始化的state。
+如果你使用了combineReducers，那么preloadedState应当是一个‘拥有所有combineReducers的key’的对象。
 
-enhancer：对store处理的增强，用来拓展第三方的支持，比如用applyMiddleware加载中间件，react-redux就是一个非常优秀的用来和react结合的中间件。
+enhancer：对store处理的增强，用来拓展第三方的支持，只支持用applyMiddleware加载中间件。
+这也是redux的伟大之处。
 
-随后声明了一些变量和函数，并且return
+看一下return
 
     return {
         dispatch,
@@ -39,32 +41,100 @@ enhancer：对store处理的增强，用来拓展第三方的支持，比如用a
 
 ## dispatch
 
+dispatch发送action，这是唯一的途径来触发state的变化。
+
+    function dispatch(action) {
+        if (!isPlainObject(action)) {
+        throw new Error(
+            'Actions must be plain objects. ' +
+            'Use custom middleware for async actions.'
+        )
+        }
+
+        if (typeof action.type === 'undefined') {
+        throw new Error(
+            'Actions may not have an undefined "type" property. ' +
+            'Have you misspelled a constant?'
+        )
+        }
+
+        if (isDispatching) {
+        throw new Error('Reducers may not dispatch actions.')
+        }
+
+        try {
+        isDispatching = true
+        //更新state
+        currentState = currentReducer(currentState, action)
+        } finally {
+        isDispatching = false
+        }
+
+        //调用监听回调
+        const listeners = currentListeners = nextListeners
+        for (let i = 0; i < listeners.length; i++) {
+        const listener = listeners[i]
+        listener()
+        }
+
+        return action
+    }
+
 在dispatch方法中，唯一的参数是action，action应该是一个简单对象，type属性是必备的，其他的数据部分是可选的。
 dispatch方法首先对action进行了检查，然后是isDispatching的判断，这里做了一个简单的锁，调用了currentReducer来根据currentState和action来生成新的state。
 然后是listeners监听方法的调用。
 return结果是action本身。
 
-其余的几个函数没有被调用，是供外部调用的。
-
 ## subscribe
 
-检查参数listener是否为函数。
-ensureCanMutateNextListeners拷贝currentListeners到nextListeners。
+添加一个change listener。
+当action被发送，state tree变化的时候被调用。
+
+    function subscribe(listener) {
+        if (typeof listener !== 'function') {
+        throw new Error('Expected listener to be a function.')
+        }
+
+        let isSubscribed = true
+
+        ensureCanMutateNextListeners()
+        nextListeners.push(listener)
+
+        return function unsubscribe() {
+        if (!isSubscribed) {
+            return
+        }
+
+        isSubscribed = false
+
+        ensureCanMutateNextListeners()
+        const index = nextListeners.indexOf(listener)
+        nextListeners.splice(index, 1)
+        }
+    }
+
+ensureCanMutateNextListeners将currentListeners拷贝到nextListeners。
 将参数listener push 到 nextListeners。
+
 返回的是将参数listener 从 nextListeners去除的函数。
 
 ## getState
+
+    function getState() {
+        return currentState
+    }
 
 返回currentState。
 
 ## replaceReducer
 
 顾名思义，用nextReducer来替换currentReducer，然后dispatch({ type: ActionTypes.INIT })。
-可用于多次添加reducer，不需一次性初始化所有。
+可用于动态添加reducer，或者热加载。
 
 ## observable
 
 返回一个订阅函数，用于外部订阅state的变化。
+这个是给rx的库用的。
 
 # combineReducers
 
@@ -75,24 +145,27 @@ combineReducers也只有一个参数reducers，常常是这种形式,一个巨�
         offlineOrder
     })
 
-它的作用是将参数中包含的不同的reducer函数组合成一个reducer函数，着个函数可以调用每一个child函数，并且将它们的结果放到一个state对象中。
+它的作用是将参数中包含的不同的reducer函数组合成一个reducer函数，这个函数可以调用每一个child函数，并且将它们的结果放到一个state对象中。
 
 首先按照键值对遍历参数reducers，依次检查值的类型是否为函数,并存放在finalReducers中。
 然后调用assertReducerSanity来检查每个reducer是否能处两个测试action，需要保证每个reducer都有一个初始state。
 
-combineReducers返回的也是一个reducer函数，在调用getUnexpectedStateShapeWarningMessage检查过参数之后，依次按照reducers的key，使用对应的state和action来调用对应的reducer方法，将返回结果放到nextState中，并且根据nextStateForKey !== previousStateForKey 前后state是否发生了变化来判断，没变化返回之前的state，变化了返回新的state。
+combineReducers返回的也是一个reducer函数，接收旧的state和action，生成新的state。
+在调用getUnexpectedStateShapeWarningMessage检查过参数之后，依次按照reducers的key，使用对应的state和action来调用对应的reducer方法，将返回结果放到nextState中，并且根据nextStateForKey !== previousStateForKey 前后state是否发生了变化来判断，没变化返回之前的state，变化了返回新的state。
 
 # bindActionCreators
-
-    function bindActionCreators(actionCreators, dispatch)
-
-actionCreators如果是一个function，直接return
 
     function bindActionCreator(actionCreator, dispatch) {
       return (...args) => dispatch(actionCreator(...args))
     }
 
-如果actionCreators是一个对象，按照键值对依次执行bindActionCreator，将返回结果放到boundActionCreators中return回去。
+返回一个dispatch actionCreator产生的action的函数。
+
+    function bindActionCreators(actionCreators, dispatch)
+
+actionCreators如果是一个function，直接return bindActionCreator
+
+如果actionCreators是一个对象，按照键值对依次执行bindActionCreator，将返回结果放到boundActionCreators对象中中return回去。
 
 # applyMiddleware
 
@@ -140,7 +213,19 @@ redux-thunk是一个非常好的中间件，我也在生产环境中使用。
 
 # compose
 
-    function compose(...funcs)
+    export default function compose(...funcs) {
+    if (funcs.length === 0) {
+        return arg => arg
+    }
+
+    if (funcs.length === 1) {
+        return funcs[0]
+    }
+
+    return funcs.reduce((a, b) => (...args) => a(b(...args)))
+    }
+
+主要用于中间件。
 
 首先过滤参数，只保留函数类型的。
 
