@@ -231,3 +231,7 @@ FormattedMessage是利用this.context.intl和传入的id来调用formatMessage�
     }
 
 具体的文字转换调用是intl-messageformat这个库。
+
+### 总结
+
+前端国际化，看起来很高大上，其实一点都不复杂，通用的做法都是把文字资源统一管理，在页面中用id来占位，根据语言使用不同的资源去填充。gui开发的国际化都是相似的，例如android也是这种做法，string会放到resources目录下来管理。或者设计一个特殊的注解之类的来区分不同语言的文字部分。
