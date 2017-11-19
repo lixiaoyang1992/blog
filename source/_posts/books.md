@@ -8,6 +8,17 @@ category : 阅读
 
 ##### 本书单不定时更新，按照看的先后倒序排列  
 
+老人与海
+> 从小就久闻大名，直到现在才读
+
+红拂夜奔
+> 没看完
+
+白银杰克
+
+我是猫
+> 没看完，但我也想当一只喵
+
 [冰与火之歌外传:七王国的骑士](https://www.amazon.cn/gp/product/B00HF317DY)
 
 [疾风回旋曲](https://www.amazon.cn/gp/product/B00X9FYAP4)
@@ -25,6 +36,7 @@ category : 阅读
 [挪威的森林](https://www.amazon.cn/dp/B00JLACTKY)
 
 [一个陌生女人的来信](https://www.amazon.cn/dp/B008HK7DIC)
+> 让我了解了爱情可以让人多么的卑微
 
 [当我谈跑步时,我谈些什么](https://www.amazon.cn/dp/B01449CGAO)
 
