@@ -73,7 +73,7 @@ ReactElement函数是一个工厂函数，创建新的react元素；不支持cla
       return element;
     };
 
-# createElement
+## createElement
 
     createElement(type, config, children)
 
@@ -174,7 +174,7 @@ type是你要创建的元素的类型，可以是html的div或者span，也可�
       );
     }
 
-# createFactory
+## createFactory
 
 这个就是相当于createElement的第一个参数type给制定了，返回给你个createElement函数。
 
@@ -184,9 +184,20 @@ type是你要创建的元素的类型，可以是html的div或者span，也可�
       return factory;
     }
 
-# cloneElement
+##cloneElement
 
+    cloneElement(element, config, children)
 
+返回一个克隆的新元素，拥有原始元素的props和新的props，原始元素的key和ref也会被保留。几乎等价于
+
+    <element.type {...element.props} {...props}>{children}</element.type>
+
+首先将原始元素的props复制一份；
+再将key、ref、self、source、owner保留；
+如果config中有ref、owner、key，使用config中的；
+填充defaultProps，优先使用config，其次是原始元素的；
+children放到props里；
+返回ReactElement。
 
     export function cloneElement(element, config, children) {
       var propName;
@@ -253,5 +264,33 @@ type是你要创建的元素的类型，可以是html的div或者span，也可�
       return ReactElement(element.type, key, ref, self, source, owner, props);
     }
 
-# isValidElement
+## isValidElement
+
+通过$$typeof判断一个对象是否是react元素。
+
+    export function isValidElement(object) {
+      return (
+        typeof object === 'object' &&
+        object !== null &&
+        object.$$typeof === REACT_ELEMENT_TYPE
+      );
+    }
+
+# ReactElementValidator
+
+ReactElementValidator就是在开发环境下对ReactElement的方法多了一些校验。
+
+## createElementWithValidation
+
+首先校验type是否是合法的：string、function、symbol、number。
+校验了子节点的key，确保每个数组中的元素都有唯一的key。
+校验了props是否符合设置的proptypes。
+
+## createFactoryWithValidation
+
+把type设为不可枚举，并且在get的时候警告，不建议直接访问Factory.type
+
+## cloneElementWithValidation
+
+校验了子节点的key；校验了proptypes。
 
