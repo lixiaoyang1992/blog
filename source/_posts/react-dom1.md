@@ -49,3 +49,6 @@ render的内容如下
         callback,
       );
     },
+
+在legacyRenderSubtreeIntoContainer中，首先检查container是否是有效,
+
