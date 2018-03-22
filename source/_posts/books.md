@@ -1,13 +1,25 @@
 ---
 title: 书单
-date: 2016-07-24 9:00:00
+date: 2018-03-22 23:08:49
 category : 阅读
 ---
 
-#### 以下是我最近读过的书，并附上购买链接，少量会有读后感  
+#### 以下是我最近看完的书，并附上购买链接，少量会有读后感  
 
 ##### 本书单不定时更新，按照看的先后倒序排列  
 
+[远山淡影](https://www.amazon.cn/gp/product/B00SIO00XW)
+
+[黑旗：ISIS的崛起](https://www.amazon.cn/gp/product/B075WY2CKJ)
+
+[鞋狗: 耐克创始人菲尔·奈特亲笔自传](https://www.amazon.cn/gp/product/B071NFF512)
+
+[腾讯传1998—2016](https://www.amazon.cn/gp/product/B01N0BVW80)
+
+斯普特尼克恋人
+
+没有女人的男人们
+<!-- more -->
 老人与海
 > 从小就久闻大名，直到现在才读
 
@@ -41,7 +53,7 @@ category : 阅读
 [当我谈跑步时,我谈些什么](https://www.amazon.cn/dp/B01449CGAO)
 
 [了不起的盖茨比](https://www.amazon.cn/dp/B00EK865WK)
-<!-- more -->
+
 [JavaScript语言精粹](https://www.amazon.cn/dp/B0097CON2S)
 
 [遇到百分之百的女孩](https://www.amazon.cn/dp/B001DOW6TA)
