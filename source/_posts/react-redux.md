@@ -1,7 +1,7 @@
 ---
 title: react-redux源码分析
 date: 2016-12-22 13:07:46
-tags: reactjs
+tags: react
 category : javascript
 ---
 

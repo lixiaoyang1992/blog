@@ -1,7 +1,7 @@
 ---
 title: 拖放排序库 Sortable 使用
 date: 2016-06-21 23:15:27
-tags: 前端
+tags: javascript
 category : javascript
 ---
 

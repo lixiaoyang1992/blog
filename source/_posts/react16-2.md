@@ -1,7 +1,8 @@
 ---
 title: react v16.2.0 
 date: 2017-11-29 12:51:23
-tags: react javascript
+tags: react
+category : javascript
 ---
 
 几个小时之前react发布了v16.2.0版本，最大的变化就是新增了Fragment语法。

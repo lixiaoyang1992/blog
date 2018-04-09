@@ -1,7 +1,8 @@
 ---
 title: react源码解析-4ReactElement与ReactElementValidator
 date: 2017-11-25 17:26:20
-tags: react javascript
+tags: react
+category : javascript
 ---
 
 顾名思义，这两个文件里面的都是对于react元素的一些操作，一个用于生产环境，一个用于开发环境的校验。

@@ -1,7 +1,8 @@
 ---
 title: react 中的数据
 date: 2018-04-04 14:14:26
-tags: react javascript
+tags: react
+category : javascript
 ---
 
 本文基于 react16.3 讲一下 state,props,context 三种数据使用方式。
@@ -42,3 +43,27 @@ react-redux，react-router 都使用这个 API。
 ## 16.3
 
 新版中加入了 React.createContext API，更优雅的实现了数据的传递。
+
+### React.createContext
+
+    const {Provider, Consumer} = React.createContext(defaultValue);
+
+生成的 Provider, Consumer 用来传递 context。
+
+### Provider
+
+    <Provider value={/* some value */}>
+
+Provider 包裹在 Consumer 的外部，供其订阅 context 的变化。  
+一个 Provider 可以对应多个 Consumer。
+
+### Consumer
+
+    <Consumer>
+      {value => /* render something based on the context value */}
+    </Consumer>
+
+Consumer 组件订阅了 context 的变化。  
+Consumer 需要一个函数作为 child。这个函数收到 context 作为参数，返回一个 react 节点。  
+Consumer 会寻找最近的 Provider 里面的 value 使用。  
+当没有 Provider 时，createContext 中的 defaultValue 是 Consumer 获取到的 context。

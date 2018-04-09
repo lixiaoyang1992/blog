@@ -1,7 +1,8 @@
 ---
 title: react源码解析-2Children
 date: 2017-11-21 12:40:38
-tags: react javascript
+tags: react
+category : javascript
 ---
 
 React.Children提供了对this.props.children的操作的函数。

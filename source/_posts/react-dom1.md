@@ -1,7 +1,8 @@
 ---
 title: react-dom源码解析-1初探
 date: 2017-12-01 17:06:17
-tags: react javascript
+tags: react
+category : javascript
 ---
 
 react-dom是负责将react渲染的包，分为浏览器渲染和服务器渲染。

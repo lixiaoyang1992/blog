@@ -1,7 +1,8 @@
 ---
 title: react源码解析-1初探
 date: 2017-11-19 14:24:55
-tags: react javascript
+tags: react
+category : javascript
 ---
 
 react这个项目分为多个package，其中核心部分react主要负责虚拟节点，由不同的render将虚拟节点渲染到不同的平台，如react-dom，react-native-renderer等。完全解耦，来实现跨平台。

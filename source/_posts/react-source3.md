@@ -1,7 +1,8 @@
 ---
 title: react源码解析-3ReactBaseClasses
 date: 2017-11-25 14:58:47
-tags: react javascript
+tags: react
+category : javascript
 ---
 
 之前说过ReactBaseClasses中包含了我们常用的组件类Component, PureComponent, AsyncComponent。
