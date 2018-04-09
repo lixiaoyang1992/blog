@@ -4,6 +4,8 @@ date: 2018-04-04 14:14:26
 tags: react javascript
 ---
 
+本文基于 react16.3 讲一下 state,props,context 三种数据使用方式。
+
 <!-- more -->
 
 # state
@@ -20,8 +22,23 @@ setState 会将旧的状态和新的合并，所以在调用时是需要将更�
 
 # props
 
-props 是父组件传入子组件的参数。
+props 用于父组件向子组件传入参数。props 也是只读的。
+
+props 可以用 prop-types 进行类型校验。
 
 # context
 
-context 是储存在祖先组件内的数据。
+context 用于跨越多级组件传递数据。
+
+在 16.3 中，推出了新的 context API。
+
+## legacy
+
+旧版的使用需要定义 childContextTypes 和 getChildContext 来设置和获取 context。
+react-redux，react-router 都使用这个 API。
+
+如果没有定义 childContextTypes，context 就是一个空对象。
+
+## 16.3
+
+新版中加入了 React.createContext API，更优雅的实现了数据的传递。
