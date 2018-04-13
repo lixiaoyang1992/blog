@@ -5,6 +5,11 @@ tags: rollup
 category : javascript
 ---
 
-rollup 是一个打包工具，使用标准的 es6 模块，以减小模块的体积
+rollup 是一个打包工具。
+rollup 使用标准的 es6 模块，替代了 commonJS、AMD,因此更有效率，可以获得更小的文件体积。
+rollup 使用了 Tree Shaking，因此只会打包我们用到的方法。
 
-比起应用，rollup 更适用于库
+比起应用，rollup 更适用于库。
+react、redux 等库也使用了 rollup。
+
+<!-- more -->
